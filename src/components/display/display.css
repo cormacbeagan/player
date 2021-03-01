@@ -1,0 +1,46 @@
+.displayDiv {
+    margin-top: 20px;
+    height: 50px;
+    animation-name: zoomIn;
+    animation-duration: 500ms;
+    animation-timing-function: cubic-bezier(0, 2.93, 0.57, 0.46);
+}
+
+@keyframes zoomIn {
+    0% {transform: scale(0.5);}
+    100% {transform: scale(1);}
+}
+
+.display {
+    color: #f744447e;
+    text-shadow: 0px 0px 15px #2a58d8bb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 1.2;
+    display: inline;
+    text-align: center;
+    width: 240px;
+    animation-name: fadeIn;
+    animation-duration: 500ms;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    position: relative;
+    z-index: 2;
+}
+
+.display:hover {
+    text-shadow: 0px 0px 15px #2a58d8d5;
+    color: #f74444da;
+    transform: scale(1.01);
+    transition: transform 200ms ease-out;
+    
+}
+
+
+@keyframes fadeIn {
+  0% {opacity:0}
+  100% {opacity:1}
+}
+
+
+

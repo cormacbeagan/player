@@ -1,0 +1,39 @@
+.divInfoStyle {
+    padding: 4px;
+    height: 30px;
+    max-width: 150px;
+    min-height: 58px;
+    contain: content;
+    flex-grow: 1;
+};
+
+h4 {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0 ;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.name { 
+    margin: 0;
+    padding: 0;
+    width: 142px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #f74444bb;
+    text-align: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info {
+    font-size: 14px;
+    color: rgba(235, 238, 234, 0.952);
+    text-align: inherit;
+    display: block;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+

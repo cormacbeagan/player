@@ -1,0 +1,85 @@
+.volume-container {
+    margin: 10px;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    background: transparent;
+    width: 100%;
+    margin: 0;
+}
+
+input[type='range']:focus {
+    outline: none;
+    background-color: #10418bef;
+}
+
+input[type='range']:focus::-webkit-slider-runnable-track {
+    outline: none;
+    background-color: #10418bef;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background-color: #1c1f29;
+    -webkit-animation: fadeIn 3s; /* not working on chrome??!! */
+    animation: fadeIn 3s;
+    transition: background-color ease-out 800ms;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background: #f744447e;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.5px;
+}
+
+input[type='range']:hover::-webkit-slider-runnable-track {
+    background-color: #10418bef;
+}
+
+input[type='range']::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background-color: #1c1f29;
+    border-radius: 1.3px;
+    animation: fadeIn ease 3s;
+    transition: background-color ease-out 800ms;
+}
+
+input[type='range']::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background: #f744447e;
+    cursor: pointer;
+    border: none;
+}
+
+input[type='range']:hover::-moz-range-track {
+    background-color: #10418bef;
+}
+
+@keyframes fadeIn {
+    from {
+        background-color: #10418bef;
+    }
+    to {
+        background-color: #1c1f29;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        background-color: #10418bef;
+    }
+    to {
+        background-color: #1c1f29;
+    }
+}

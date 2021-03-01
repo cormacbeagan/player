@@ -1,0 +1,17 @@
+.image-container {
+      height: 300px;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url('../../files/2daylog.jpg');
+      box-shadow: 15px 75px 80px rgba(2, 2, 2, 0.753);
+      position: relative;
+      flex-grow: 2;
+  }
+
+.image{
+    height: 300px;
+    width: 300px;
+  }
