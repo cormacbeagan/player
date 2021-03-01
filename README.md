@@ -47,3 +47,5 @@ npm build
 To create a production build
 
 ### Licence
+
+MIT © P. Cormac Beagan
