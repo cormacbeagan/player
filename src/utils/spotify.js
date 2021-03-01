@@ -41,7 +41,6 @@ const Spotify = {
   },
 
   async getClientToken() {
-    console.log('calling');
     if (clientToken) {
       return clientToken;
     }
@@ -56,7 +55,6 @@ const Spotify = {
       body: 'grant_type=client_credentials',
     });
     const data = await response.json();
-    console.log(data);
     clientToken = data.access_token;
     console.log(clientToken);
     window.setTimeout(() => (clientToken = ''), data.expires_in * 1000);
