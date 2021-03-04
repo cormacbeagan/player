@@ -18,6 +18,7 @@ const Spotify = {
         'width=600,height=600'
       );
 
+      // retrieves the access token from the pop up window
       const timer = setInterval(() => {
         try {
           accessTokenMatch = popup.location.href.match(/access_token=([^&]*)/);
@@ -82,6 +83,7 @@ const Spotify = {
       /*console.log(err)*/
     }
   },
+
   async search(term) {
     try {
       const clientId = await Spotify.getClientToken();
@@ -99,6 +101,7 @@ const Spotify = {
       /*console.log(err)*/
     }
   },
+
   async setUserId() {
     try {
       const response = await fetch('https://api.spotify.com/v1/me', {
@@ -111,6 +114,7 @@ const Spotify = {
       console.log(err);
     }
   },
+
   async createPlaylist(userId) {
     try {
       const response = await fetch(
@@ -127,6 +131,8 @@ const Spotify = {
       /*console.log(err)*/
     }
   },
+
+  // check if the '2day4life' playlist already exists
   async checkPlaylist() {
     if (!accessToken) {
       Spotify.getAccessToken();
@@ -157,6 +163,7 @@ const Spotify = {
       /*console.log(err)*/
     }
   },
+
   async addToPlaylist(playlistId, trackUri) {
     if (!(playlistId && trackUri)) {
       return;
@@ -180,6 +187,9 @@ const Spotify = {
       /*console.log(err)*/
     }
   },
+
+  // check if the track is already in the playlist
+  // limitation - only 100 tracks are returned for any playlist
   async checkPlaylistTracks(id, trackId, trackUri) {
     if (!(id && trackId && trackUri)) {
       return;
