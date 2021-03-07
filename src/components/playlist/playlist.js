@@ -19,13 +19,9 @@ function Playlist({ onClick }) {
 
   return (
     <div className="divPlaylistStyle">
-      <a
-        href="/#"
-        className="playlist-btn playlist-btn-white"
-        onClick={handleClick}
-      >
+      <button className="playlist-btn" onClick={handleClick}>
         ADD TO PLAYLIST
-      </a>
+      </button>
     </div>
   );
 }

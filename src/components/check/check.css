@@ -1,73 +1,65 @@
 .divCheckStyle {
-    margin: 10px auto 25px auto;
-    height: 50px;
-    width: 180px;
-    height: 40px;
-    font-family: 'Rubrik' sans-serif;
-    position: relative;
-    text-align: center;
+  margin: 10px auto 25px auto;
+  height: 50px;
+  width: 180px;
+  height: 40px;
+  font-family: 'Rubrik' sans-serif;
+  position: relative;
+  text-align: center;
+  position: relative;
 }
 
-
-
-.check-btn:link {
-    width: 140px;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 100px;
-    transition: all .2s;
-    position: absolute;
-    left: 0;
+.check-btn {
+  width: 170px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  border: none;
+  background-color: #f744447e;
+  color: white;
 }
 
 .check-btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 8px 5px 15px rgba(40, 85, 207, 0.226);
+  transform: translateY(-1px);
+  box-shadow: 8px 5px 15px rgba(40, 85, 207, 0.226);
 }
 
 .check-btn:active {
-    transform: translateY(2px);
-    box-shadow: 6px 2px 10px rgba(40, 85, 207, 0.226);
-
+  transform: translateY(2px);
+  box-shadow: 6px 2px 10px rgba(40, 85, 207, 0.226);
 }
 
-.check-btn-white {
-    color: white;
-    width: 120px;
-    background-color: #f744447e;
+.check-btn.checking {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #0e4aa531;
 }
 
-.check-btn-white-checking {
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: #0e4aa531;
-}
-
-.check-btn-white-checking:after {
-    content: '.';
-    animation: dots 1s steps(5, end) infinite;
+.check-btn.checking:after {
+  content: '.';
+  animation: dots 1s steps(5, end) infinite;
 }
 
 @keyframes dots {
-
-  0%, 20% {
-    color: rgba(0,0,0,0);
-    text-shadow:
-      .25em 0 0 rgba(0,0,0,0),
-      .5em 0 0 rgba(0,0,0,0);}
+  0%,
+  20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
   40% {
     color: white;
-    text-shadow:
-      .25em 0 0 rgba(0,0,0,0),
-      .5em 0 0 rgba(0,0,0,0);}
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
   60% {
-    text-shadow:
-      .25em 0 0 white,
-      .5em 0 0 rgba(0,0,0,0);}
-  80%, 100% {
-    text-shadow:
-      .25em 0 0 white,
-      .5em 0 0 white;}
+    text-shadow: 0.25em 0 0 white, 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  80%,
+  100% {
+    text-shadow: 0.25em 0 0 white, 0.5em 0 0 white;
+  }
 }
-

@@ -21,16 +21,13 @@ function Check({ onClick, check }) {
 
   return (
     <div className="divCheckStyle">
-      <a
-        href="/#"
+      <button
         onClick={handleClick}
-        className={`check-btn ${
-          check === 'CHECK' ? ' check-btn-white ' : 'check-btn-white-checking '
-        }
+        className={`check-btn ${check === 'CHECK' ? ' ' : 'checking'}
         `}
       >
         {check}
-      </a>
+      </button>
     </div>
   );
 }

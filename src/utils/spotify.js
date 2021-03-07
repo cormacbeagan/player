@@ -57,7 +57,6 @@ const Spotify = {
     });
     const data = await response.json();
     clientToken = data.access_token;
-    console.log(clientToken);
     window.setTimeout(() => (clientToken = ''), data.expires_in * 1000);
   },
 

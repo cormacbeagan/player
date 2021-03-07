@@ -57,12 +57,11 @@ function Listen({ onAudioLoad }) {
         crossOrigin="anonymous"
         id="audio"
       />
-      <a
-        href="/#"
+      <button
         tabIndex="0"
         ref={btn}
         id="listen"
-        className="listen-btn listen-btn-white"
+        className="listen-btn"
         onClick={playAudio}
         style={
           listen === 'STOP'
@@ -71,7 +70,7 @@ function Listen({ onAudioLoad }) {
         }
       >
         {listen}
-      </a>
+      </button>
     </div>
   );
 }

@@ -1,45 +1,40 @@
 .divListenStyle {
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 50px;
-    height: 50px;
-    width: 180px;
-    position: relative;
-    text-align: center;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 50px;
+  height: 50px;
+  width: 180px;
+  position: relative;
+  text-align: center;
 }
 
 .audioStyle {
-    display: none;
+  display: none;
 }
 
 .listen-btn {
-    cursor: pointer;
-    width: 140px;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 100px;
-    transition: all 0.2s;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.listen-btn:link {
-    text-decoration: none;
+  cursor: pointer;
+  width: 170px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: none;
+  font-size: 20px;
+  color: white;
+  text-align: center;
 }
 
 .listen-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 8px 5px 15px #2855cf3a;
+  transform: translateY(-2px);
+  box-shadow: 8px 5px 15px #2855cf3a;
 }
 
 .listen-btn:active {
-    transform: translateY(2px);
-    box-shadow: 6px 2px 10px rgba(40, 85, 207, 0.226);
-}
-
-.listen-btn-white {
-    color: white;
-    text-align: center;
+  transform: translateY(2px);
+  box-shadow: 6px 2px 10px rgba(40, 85, 207, 0.226);
 }

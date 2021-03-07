@@ -19,7 +19,7 @@ function Infolist({ displayData }) {
         <div className="outer" tabIndex="0">
           <div className="inner">
             <div className="imageStyle">{<Image data={displayData} />}</div>
-            <div className="listStyle">
+            <article className="listStyle">
               <div className="divLeftStyle">
                 <Info key={1} heading={'Track'} text={displayData.title} />
                 <Info key={2} heading={'Artist'} text={displayData.artist} />
@@ -45,7 +45,7 @@ function Infolist({ displayData }) {
                   side={side}
                 />
               </div>
-            </div>
+            </article>
           </div>
         </div>
       ) : (

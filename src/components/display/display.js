@@ -1,11 +1,11 @@
-import './display.css'
+import './display.css';
 
 function Display({ displayData }) {
-    return (
-        <div className='displayDiv'>
-            <text className='display'>{displayData}</text>
-        </div>
-    )
+  return (
+    <div className="displayDiv">
+      <p className="display">{displayData}</p>
+    </div>
+  );
 }
 
-export default Display
+export default Display;
